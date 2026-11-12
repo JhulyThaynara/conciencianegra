@@ -1,0 +1,672 @@
+
+/* =====================================
+   AFRO LITERATURA
+   ESTILO EDITORIAL E CORES TERROSAS
+===================================== */
+
+
+/* 1. CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    --fundo: #F3EBDD;
+    --pagina: #FFFCF6;
+    --texto: #394236;
+    --cartao: #FFFFFF;
+    --suave: #E8EBDD;
+    --linha: #E2DED2;
+    --verde: #78865A;
+    --terracota: #C96B4B;
+    --mostarda: #D9A441;
+    --rosa: #D98778;
+
+    background: var(--fundo);
+    color: var(--texto);
+
+    font-family: Arial, sans-serif;
+
+    width: 100%;
+    min-height: 100vh;
+
+    transition: background 0.3s, color 0.3s;
+}
+
+body.modo-escuro {
+    --fundo: #202820;
+    --pagina: #293329;
+    --texto: #F4F0E7;
+    --cartao: #303B30;
+    --suave: #354333;
+    --linha: #4B5547;
+    --verde: #A8B98B;
+    --terracota: #DC9275;
+    --mostarda: #E7C16C;
+    --rosa: #E3A294;
+}
+
+
+/* 2. ESTRUTURA CENTRAL */
+
+.cabecalho,
+main,
+.rodape {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+main {
+    background: var(--pagina);
+}
+
+
+/* 3. CABEÇALHO */
+
+.cabecalho {
+    min-height: 75px;
+    padding: 15px 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+    gap: 15px;
+
+    background: var(--verde);
+}
+
+.logo {
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 21px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #F3D17B;
+}
+
+
+/* MENU */
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #F3D17B;
+}
+
+
+/* BOTÕES DE TEMA */
+
+.botoes-tema {
+    display: flex;
+    gap: 7px;
+}
+
+.botoes-tema button {
+    padding: 8px 12px;
+
+    border: none;
+    border-radius: 20px;
+
+    background: var(--terracota);
+    color: white;
+
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.botoes-tema button:hover {
+    background: var(--mostarda);
+    color: #303B30;
+}
+
+
+/* 4. APRESENTAÇÃO */
+
+.apresentacao {
+    padding: 25px 35px 0;
+    background: var(--pagina);
+}
+
+
+/* GALERIA DE IMAGENS */
+
+.galeria {
+    display: grid;
+
+    grid-template-columns: 1fr 1.3fr 1fr;
+
+    gap: 8px;
+
+    width: 100%;
+    height: 260px;
+
+    overflow: hidden;
+}
+
+.galeria img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 5px;
+}
+
+
+/* TÍTULO PRINCIPAL */
+
+.titulo-principal {
+    text-align: center;
+    padding: 28px 15px 35px;
+}
+
+.subtitulo {
+    color: var(--terracota);
+
+    font-size: 11px;
+    font-weight: bold;
+
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.titulo-principal h1 {
+    color: var(--verde);
+
+    font-family: Georgia, serif;
+    font-size: clamp(27px, 4vw, 38px);
+
+    margin-bottom: 12px;
+}
+
+.titulo-principal > p:last-child {
+    color: var(--texto);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* 5. CONTEÚDO EM DUAS COLUNAS */
+
+.layout {
+    display: grid;
+
+    grid-template-columns: minmax(0, 1.8fr) minmax(250px, 1fr);
+
+    gap: 30px;
+
+    padding: 25px 35px 45px;
+
+    background: var(--pagina);
+
+    align-items: start;
+}
+
+
+/* CABEÇALHO DAS SEÇÕES */
+
+.cabecalho-secao {
+    margin-bottom: 15px;
+}
+
+.etiqueta {
+    color: var(--terracota);
+
+    font-size: 10px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.cabecalho-secao h2 {
+    font-family: Georgia, serif;
+    color: var(--verde);
+    font-size: 25px;
+}
+
+
+/* 6. ARTIGOS */
+
+.artigo {
+    display: grid;
+
+    grid-template-columns: 38% minmax(0, 1fr);
+
+    gap: 17px;
+
+    align-items: center;
+
+    padding: 16px 0;
+
+    border-bottom: 1px solid var(--linha);
+}
+
+.artigo > img {
+    display: block;
+
+    width: 100%;
+    height: 155px;
+
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.informacoes-artigo {
+    min-width: 0;
+}
+
+.categoria {
+    color: var(--terracota);
+
+    font-size: 10px;
+    font-weight: bold;
+
+    letter-spacing: 1.3px;
+}
+
+.informacoes-artigo h3 {
+    color: var(--texto);
+
+    font-family: Georgia, serif;
+    font-size: 18px;
+
+    line-height: 1.35;
+    margin: 8px 0;
+}
+
+.informacoes-artigo > p:not(.categoria) {
+    color: var(--texto);
+
+    font-size: 12px;
+    line-height: 1.7;
+
+    opacity: 0.85;
+}
+
+.informacoes-artigo a {
+    display: inline-block;
+
+    margin-top: 12px;
+
+    color: var(--verde);
+
+    font-size: 12px;
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.informacoes-artigo a:hover {
+    color: var(--terracota);
+}
+
+
+/* 7. HISTÓRIA DA LITERATURA */
+
+.historia-literatura {
+    margin-top: 25px;
+    padding: 25px;
+
+    background: var(--suave);
+
+    border-radius: 6px;
+}
+
+.historia-literatura h2 {
+    font-family: Georgia, serif;
+
+    color: var(--verde);
+    font-size: 23px;
+
+    margin: 12px 0;
+}
+
+.historia-literatura p:not(.categoria) {
+    color: var(--texto);
+
+    font-size: 13px;
+    line-height: 1.8;
+
+    margin-bottom: 12px;
+}
+
+.botao {
+    display: inline-block;
+
+    margin-top: 8px;
+    padding: 11px 18px;
+
+    background: var(--terracota);
+    color: white;
+
+    border-radius: 4px;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.botao:hover {
+    background: var(--verde);
+}
+
+
+/* 8. COLUNA LATERAL */
+
+.coluna-lateral {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    min-width: 0;
+}
+
+
+/* DESTAQUE */
+
+.destaque {
+    background: linear-gradient(
+        140deg,
+        #C96B4B,
+        #D98778
+    );
+
+    color: white;
+
+    padding: 24px 20px;
+
+    border-radius: 6px;
+}
+
+.destaque .categoria {
+    color: #FFF1C8;
+}
+
+.destaque h2 {
+    font-family: Georgia, serif;
+    font-size: 23px;
+
+    line-height: 1.4;
+    margin: 12px 0;
+}
+
+.destaque > p:not(.categoria) {
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.destaque a {
+    display: inline-block;
+
+    margin-top: 15px;
+    padding: 10px 15px;
+
+    background: #FFF9EC;
+    color: #78865A;
+
+    border-radius: 4px;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+/* AUTORES */
+
+.autores,
+.obras {
+    padding: 18px;
+
+    background: var(--cartao);
+
+    border: 1px solid var(--linha);
+    border-radius: 6px;
+}
+
+.autores h2,
+.obras h2 {
+    font-family: Georgia, serif;
+    color: var(--verde);
+
+    font-size: 20px;
+    margin-bottom: 13px;
+}
+
+.autor {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 10px 0;
+
+    border-bottom: 1px solid var(--linha);
+}
+
+.autor:last-child {
+    border-bottom: none;
+}
+
+.autor img {
+    width: 65px;
+    height: 65px;
+
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.autor h3 {
+    color: var(--texto);
+    font-family: Georgia, serif;
+    font-size: 13px;
+}
+
+
+/* OBRAS */
+
+.obras article {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--linha);
+}
+
+.obras article:last-child {
+    border-bottom: none;
+}
+
+.obras h3 {
+    color: var(--terracota);
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.obras article p {
+    color: var(--texto);
+    font-size: 12px;
+}
+
+
+/* 9. REFERÊNCIAS BIBLIOGRÁFICAS */
+
+.referencias {
+    background: var(--suave);
+    padding: 40px 7%;
+}
+
+.cabecalho-referencias {
+    padding: 0 0 20px;
+    display: block;
+    background: transparent;
+}
+
+.cabecalho-referencias h2 {
+    color: var(--verde);
+
+    font-family: Georgia, serif;
+    font-size: 27px;
+
+    margin: 10px 0;
+}
+
+.cabecalho-referencias > p:last-child {
+    color: var(--texto);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.referencia {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--linha);
+}
+
+.referencia p {
+    color: var(--texto);
+
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* 10. RODAPÉ */
+
+.rodape {
+    background: #596B48;
+    color: white;
+
+    text-align: center;
+
+    padding: 30px 15px;
+}
+
+.rodape h2 {
+    color: #F3D17B;
+
+    font-family: Georgia, serif;
+    font-size: 21px;
+}
+
+.rodape p {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.direitos {
+    opacity: 0.8;
+    margin-top: 20px !important;
+}
+
+
+/* 11. RESPONSIVIDADE - TABLET */
+
+@media (max-width: 850px) {
+
+    .cabecalho {
+        justify-content: center;
+    }
+
+    .layout {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .coluna-lateral {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .destaque {
+        grid-column: 1 / -1;
+    }
+}
+
+
+/* 12. RESPONSIVIDADE - CELULAR */
+
+@media (max-width: 550px) {
+
+    .cabecalho {
+        padding: 20px 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .apresentacao {
+        padding: 15px 15px 0;
+    }
+
+    .galeria {
+        height: 170px;
+        gap: 4px;
+    }
+
+    .titulo-principal {
+        padding: 25px 5px;
+    }
+
+    .layout {
+        padding: 15px 18px 30px;
+        gap: 25px;
+    }
+
+    .artigo {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .artigo > img {
+        height: 200px;
+    }
+
+    .coluna-lateral {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .referencias {
+        padding: 30px 20px;
+    }
+
+    .titulo-principal h1 {
+        font-size: 27px;
+    }
+
+}
