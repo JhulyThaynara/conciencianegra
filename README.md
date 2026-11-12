@@ -3,46 +3,51 @@
 
 **Vozes que contam histórias, preservam memórias e transformam gerações.**
 
-## Sobre o projeto
+## 🌍 Resumo do projeto
 
-O Afro Literatura é um site desenvolvido para valorizar a literatura afro-brasileira, apresentando escritores, obras e suas contribuições para a cultura e a literatura brasileira.
+O Afro Literatura é um site desenvolvido com o objetivo de valorizar e divulgar a literatura afro-brasileira, apresentando escritores, obras e histórias que representam a cultura, a identidade e a ancestralidade negra.
 
-## Objetivos
+O site destaca a importância de autores como Carolina Maria de Jesus, Conceição Evaristo e Machado de Assis, trazendo informações sobre suas trajetórias e contribuições para a literatura brasileira.
 
-- Valorizar a cultura afro-brasileira.
-- Apresentar escritores importantes.
-- Incentivar a leitura.
-- Divulgar obras literárias.
-- Promover a identidade, a memória e a ancestralidade.
+Por meio de imagens, textos e conteúdos informativos, o projeto busca incentivar a leitura, ampliar o conhecimento cultural e reconhecer a importância da representatividade na literatura.
 
-## Autores apresentados
+## 🎯 Objetivos
+
+- Valorizar a literatura afro-brasileira.
+- Dar visibilidade aos escritores negros.
+- Incentivar a leitura e o conhecimento.
+- Divulgar obras literárias importantes.
+- Promover a cultura, a identidade e a memória.
+
+## ✍️ Autores apresentados
 
 - Carolina Maria de Jesus
 - Conceição Evaristo
 - Machado de Assis
 
-## Tecnologias utilizadas
+## 💻 Tecnologias utilizadas
 
 - HTML5
 - CSS3
 - JavaScript
 
-## Funcionalidades
+## ✨ Funcionalidades
 
 - Galeria de imagens dos escritores.
 - Apresentação de autores e obras.
 - Conteúdo sobre literatura afro-brasileira.
-- Tema claro e escuro.
+- Alternância entre tema claro e escuro.
 - Referências bibliográficas.
 
-## Como executar
+## 👥 Integrantes do projeto
 
-1. Baixe ou clone o repositório.
-2. Abra o arquivo `index.html` no navegador.
-3. Explore o conteúdo do site.
+- Jhuly
+- Roberto
 
-## Considerações finais
+## ❤️ Considerações finais
 
-O projeto Afro Literatura busca reconhecer a importância da literatura afro-brasileira, valorizando histórias, culturas e vozes que fazem parte da construção da identidade brasileira.
+O Afro Literatura é um projeto de valorização cultural que busca mostrar como a literatura é uma ferramenta de resistência, conhecimento e transformação social.
 
-**A literatura é uma ferramenta de conhecimento, resistência e transformação!** ❤️
+Conhecer essas histórias é reconhecer a diversidade e a importância da cultura afro-brasileira na construção da nossa sociedade.
+
+**A literatura dá voz às histórias que merecem ser conhecidas!**
